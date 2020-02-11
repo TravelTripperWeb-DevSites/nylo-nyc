@@ -1,41 +1,35 @@
+---
 google_maps_api_key: AIzaSyBm2DXwUKvbnRTgoBHaJ3LKuNJi_atHfKc
-
 plugins_dir:
-  - _plugins-core
-  - _plugins
-
+- _plugins-core
+- _plugins
 layouts_dir:
-  - _ttio_templates/express/layouts
-  - _layouts
-  
-data_dir: 
-  - _ttio_templates/express/data
-  - _data
-  
+- _ttio_templates/express/layouts
+- _layouts
+data_dir:
+- _ttio_templates/express/data
+- _data
 includes_dir:
-  - _ttio_templates/express/includes
-  - _includes
-  
+- _ttio_templates/express/includes
+- _includes
 sass:
   compress: true
-
-# Site settings
-baseurl: ""
+baseurl: ''
 permalink: pretty
-default_lang: 'en'
-languages: ['en']
-
-
-# Build settings
+default_lang: en
+languages:
+- en
 markdown: kramdown
-
 exclude:
-  - 'sitemap.json'
-  - 'models.json'
-  - 'media.json'
-  - 'old_media.json'
-  - 'assets'
-  - 'ttio_templates'
-
-keep_files: ['assets', 'ttio_templates/express/assets']
-rsync_copy: ['_assets', '_ttio_templates/express/assets']
+- sitemap.json
+- models.json
+- media.json
+- old_media.json
+- assets
+- ttio_templates
+keep_files:
+- assets
+- ttio_templates/express/assets
+rsync_copy:
+- _assets
+- _ttio_templates/express/assets
